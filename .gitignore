@@ -31,3 +31,6 @@ go.work.sum
 # Editor/IDE
 # .idea/
 .vscode/
+
+# Frontend dependencies (also ignored by frontend/.gitignore)
+frontend/node_modules/
