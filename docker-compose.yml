@@ -1,0 +1,10 @@
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_POLL=1 # Vite polls for file changes; see frontend/vite.config.ts
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
